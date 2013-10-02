@@ -5,3 +5,40 @@ img.backdrop-logo {
 .sidebar-nav h3 {
   margin-top: 0;
 }
+.post figure {
+  text-align: center;
+  margin: 12px auto;
+  padding: 12px;
+  border: 1px solid #E3E3E3;
+}
+.post figure img {
+  max-width: 100%;
+  height: auto;
+}
+.post figcaption {
+  font-size: 0.9em;
+  text-align: left;
+  margin: 6px 0 0;
+}
+
+/* */
+.version-number {
+  font-size: 2em;
+  margin: 0 auto;
+  text-align: center;
+}
+.version-number span {
+  display: inline-block;
+  width: 29%;
+}
+.version-explaination {
+  margin: 0 auto;
+  text-align: center;
+}
+.version-explaination span {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  width: 30%;
+}

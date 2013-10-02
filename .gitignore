@@ -1,2 +1,4 @@
 _site
+_plugins
 .DS_Store
+.idea

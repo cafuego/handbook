@@ -10,13 +10,11 @@ Backdrop CMS started its existence as a fork of [Drupal](http://drupal.org). Alt
 
 ## Design (and Architect) for the Majority
 
-There’s a good rule of thumb within Internet culture called the [1% rule](http://en.wikipedia.org/wiki/1%25_rule_%28Internet_culture%29):
+There’s a good rule of thumb within Internet culture called the [1% rule](http://en.wikipedia.org/wiki/1%25_rule_%28Internet_culture%29). It states, "the number of people who create content on the Internet represents approximately 1% of the people actually viewing that content".
 
-> The number of people who create content on the Internet represents approximately 1% of the people actually viewing that content".
+So while we acknowledge that it's very important to listen and respond to those who post feedback and participate in the Backdrop issue queue, they only represent a tiny fraction of our end users. When making decisions on how to move forward with future versions of Backdrop, we attempt to include opinions of those who are not so vocal online. This means including opinions from individuals who attend trainings, meetups, and camps; as well as real-world engagements with clients and consumers of Backdrop.
 
-With that in mind, we acknowledge that while it's very important to listen and respond to those who post feedback and participate in the Backdrop issue queue, they only represent a tiny fraction of our end users. When making decisions on how to move forward with future versions of Backdrop, we attempt to include opinions of those who are not so vocal online. This means including opinions from individuals who attend trainings, meetups, and camps; as well as real-world engagements with clients and consumers of Backdrop.
-
-This principle applies not only to the end-users (e.g. site builders and editors) of Backdrop websites, but also the developers who use Backdrop on a daily basis. We strive to build a system that is not only easy to use, but also easy to learn and build upon, with a minimal amount of technical knowledge.
+This principle applies not only to the end-users (e.g. site builders and editors) of Backdrop websites, but also the developers who use Backdrop on a daily basis. We strive to build a system that is not only easy to use, but also easy to learn and build upon, with a minimal amount of technical knowledge. While the more vocal parts of our community may be more experienced developers, we always need to keep in mind the developers who are newer (and less vocal) within the project.
 
 ## Extensibility
 
