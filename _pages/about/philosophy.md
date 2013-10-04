@@ -2,6 +2,7 @@
 permalink: about/philosophy/
 layout: bootstrap-post
 title:  "Backdrop CMS Philosophy"
+section: about
 ---
 
 # Philosophy

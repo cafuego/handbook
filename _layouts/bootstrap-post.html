@@ -37,11 +37,7 @@
           <img src="{{ BASE_PATH }}img/backdrop-alone.png" alt="Backdrop Logo" class="backdrop-logo">{{ site.name }}</a>
         </div>
         <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+          {% include nav.html %}
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
     </div><!-- /.navbar -->
@@ -62,15 +58,19 @@
 
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
           <div class="well sidebar-nav">
-            {% include toc.html %}
+            {% if page.section == "about" %}
+              {% include toc_about.html %}
+            {% elsif page.section == "dev" %}
+              {% include toc_dev.html %}
+            {% elsif page.section == "user" %}
+              {% include toc_user.html %}
+            {% endif %}
           </div><!--/.well -->
         </div><!--/span-->
       </div><!--/row-->
 
-      <hr>
-
-      <footer>
-        <p>&copy; Backdrop 2013</p>
+      <footer class="row">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a>
       </footer>
 
     </div><!--/.container-->

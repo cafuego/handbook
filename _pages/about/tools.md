@@ -2,6 +2,7 @@
 permalink: about/tools/
 layout: bootstrap-post
 title: "Backdrop CMS Communication and Tools (Issue queues, IRC, StackExchange)"
+section: about
 ---
 
 # Communication and Tools

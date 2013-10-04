@@ -2,6 +2,7 @@
 permalink: versions/
 layout: bootstrap-post
 title: "Release Cycles"
+section: about
 ---
 {% include setup.liquid %}
 

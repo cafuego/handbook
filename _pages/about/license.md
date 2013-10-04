@@ -2,6 +2,7 @@
 permalink: about/license/
 layout: bootstrap-post
 title: "License and Copyright"
+section: about
 ---
 
 # License and Copyright

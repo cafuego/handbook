@@ -1,0 +1,18 @@
+{% if page.path == "index.html" %}
+  {% capture home_class %} class="active"{% endcapture %}
+{% endif %}
+{% if page.section == "about" %}
+  {% capture about_class %} class="active"{% endcapture %}
+{% endif %}
+{% if page.section == "dev" %}
+  {% capture dev_class %} class="active"{% endcapture %}
+{% endif %}
+{% if page.section == "user" %}
+  {% capture user_class %} class="active"{% endcapture %}
+{% endif %}
+          <ul class="nav navbar-nav">
+            <li{{ home_class }}><a href="{{ BASE_PATH }}">Home</a></li>
+            <li{{ about_class }}><a href="{{ BASE_PATH }}about/philosophy/">About</a></li>
+            <li{{ dev_class }}><a href="{{ BASE_PATH }}code/">Developers</a></li>
+            <li{{ user_class }}><a href="{{ BASE_PATH }}users/">Users Guide</a></li>
+          </ul>

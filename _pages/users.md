@@ -1,7 +1,10 @@
 ---
-permalink: install/
+permalink: users/
 layout: "bootstrap-post"
 title: "Installation Instructions for Backdrop"
 section: user
 ---
-Installation instructions
+
+# Backdrop Users Guide
+
+Introduction to Users Guide

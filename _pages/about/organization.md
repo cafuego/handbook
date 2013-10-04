@@ -2,6 +2,7 @@
 permalink: about/organization/
 layout: bootstrap-post
 title: "Project Organization"
+section: about
 ---
 {% include setup.liquid %}
 

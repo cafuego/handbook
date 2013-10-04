@@ -2,6 +2,7 @@
 permalink: versions/current/
 layout: bootstrap-post
 title: "Backdrop CMS Current Versions"
+section: about
 ---
 {% include setup.liquid %}
 
