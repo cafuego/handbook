@@ -4,7 +4,7 @@ layout: bootstrap-post
 title:  "Backdrop CMS PHP Coding Standards"
 section: dev
 ---
-{% include setup.liquid %}
+
 
 # PHP Coding Standards
 
@@ -111,7 +111,7 @@ In templates, the alternate control statement syntax using colons instead of bra
 
 ##Line length and wrapping <a id="line-length"></a>[#](#line-length)
 
-The following rules apply to code. See [Doxygen and comment formatting conventions]({{ BASE_PATH }}coding-standards/doxygen) for rules pertaining to comments.
+The following rules apply to code. See [Doxygen and comment formatting conventions](/coding-standards/doxygen) for rules pertaining to comments.
 
 - In general, all lines of code should not be longer than 80 chars.
 - Lines containing longer function names, function/class definitions, variable declarations, etc are allowed to exceed 80 chars.
@@ -291,7 +291,7 @@ $string .= baz();
 
 ##Comments <a id="comments"></a>[#](#comments)
 
-Standards for documenting functions, classes, and methods are discussed on the separate [Doxygen and comment formatting conventions]({{ BASE_PATH }}coding-standards/doxygen).
+Standards for documenting functions, classes, and methods are discussed on the separate [Doxygen and comment formatting conventions](/coding-standards/doxygen).
 
 Comments within functions and methods should use capitalized sentences with punctuation. All caps are used in comments only when referencing constants, e.g., TRUE. Comments should be on a separate line immediately before the code line or block they reference. For example:
 

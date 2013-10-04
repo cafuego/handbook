@@ -4,7 +4,7 @@ layout: bootstrap-post
 title: "Backdrop CSS Coding Standards"
 section: dev
 ---
-{% include setup.liquid %}
+
 
 # CSS Coding Standards
 
@@ -115,7 +115,7 @@ Tip: configure your editor to "show invisibles". This will allow you to eliminat
 
 Well commented code is extremely important. Take time to describe components, how they work, their limitations, and the way they are constructed. Don't leave others guessing as to the purpose of uncommon or non-obvious code.
 
-To stay consistent with the rest of Backdrop's code base, we borrow some of the CSS comment styles from the [Doxygen and comment formatting conventions]({{ BASE_PATH }}coding-standards/doxygen) for PHP files.
+To stay consistent with the rest of Backdrop's code base, we borrow some of the CSS comment styles from the [Doxygen and comment formatting conventions](/coding-standards/doxygen) for PHP files.
 
 ###File comments
 
@@ -135,7 +135,7 @@ Note that a new line should follow a `@file` documentation block. And keep line-
 
 ###Multi-line comments
 
-When describing a ruleset or set of rulesets, any comment that requires 2 or more lines (wrapped to 80 characters) must follow the [Doxygen formatting conventions]({{ BASE_PATH }}coding-standards/doxygen) (also called a “docblock”).
+When describing a ruleset or set of rulesets, any comment that requires 2 or more lines (wrapped to 80 characters) must follow the [Doxygen formatting conventions](/coding-standards/doxygen) (also called a “docblock”).
 
 ```css
 /**

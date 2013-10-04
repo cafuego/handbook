@@ -4,7 +4,7 @@ layout: bootstrap-post
 title: "JavaScript Coding Standards"
 section: dev
 ---
-{% include setup.liquid %}
+
 
 #JavaScript Coding Standards
 
@@ -238,7 +238,7 @@ var object = { $bar: $('.bar') };
 
 ##Comments <a id="comments"></a>[#](#comments)
 
-Comment standards are discussed on the separate [Doxygen and comment formatting conventions]({{ BASE_PATH }}coding-standards/doxygen).
+Comment standards are discussed on the separate [Doxygen and comment formatting conventions](/coding-standards/doxygen).
 
 Non-documentation comments should use capitalized sentences with punctuation. Comments should be on a separate line immediately before the code line or block they reference. For example:
 

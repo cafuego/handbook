@@ -4,7 +4,7 @@ layout: bootstrap-post
 title:  "Backdrop CMS Code Documentation Standards"
 section: dev
 ---
-{% include setup.liquid %}
+
 
 # Code Documentation Standards
 
