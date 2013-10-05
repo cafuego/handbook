@@ -13,9 +13,9 @@ If you're sure it's a bug with the software, search and then file an issue in th
 
 ##Organizing Issues
 
-Github's issue tracker has limited functionality when it comes to organizing issues. The primary tool for organization is using **labels**. Unfortunately, only "committers" on a project can use labels, so Backdrop uses a dedicated (empty) repository to which anyone may be granted access.
+Github's issue tracker has limited functionality when it comes to organizing issues. The primary tool for organization is using **labels**. Unfortunately, only "committers" on a project can use labels, so Backdrop uses a dedicated "backdrop-issues" repository to which anyone may be granted access. This [Issues-only repository](https://help.github.com/articles/issues-only-access-permissions) approach is recommended by Github when needing separate permissions for issue management.
 
-
+Unfortunately
 
 ##Associating Issues and Pull Requests
 
