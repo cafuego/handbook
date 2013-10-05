@@ -19,7 +19,7 @@ This principle applies not only to the end-users (e.g. site builders and editors
 
 ## Extensibility
 
-Backdrop aims to provide a powerful core that can be readily extended through add-on publicly available contributed or handwritten custom modules. Although Backdrop core should provide the most commonly used options that suit the majority, desired features that are not implemented due to their specific use-cases or complexity should be able to extend Backdrop core, as long as it that extensibility is balanced by the tenents of learnability and performance.
+Backdrop aims to provide a powerful core that can be readily extended through publicly available contributed or handwritten custom modules. Although Backdrop core should provide the most commonly used options that suit the majority, desired features that are not implemented due to their specific use-cases or complexity should be able to extend Backdrop core, as long as it that extensibility is balanced by the tenents of learnability and performance.
 
 ## Low Barrier to Entry (Learnability and System Requirements)
 
