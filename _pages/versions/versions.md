@@ -4,7 +4,6 @@ layout: bootstrap-post
 title: "Release Cycles"
 section: about
 ---
-{% include setup.liquid %}
 
 # Release Cycles
 
@@ -28,7 +27,7 @@ Backdrop uses semantic versioning (which is also under consideration for Drupal 
 The amount of work can be kept to a minimum by organizing development branches cleverly with Git. Bugs will be fixed in the patch release version first, which is merged into the minor release, which in turn is merged into the major release. This means when fixing bugs, the fix is made to the production version of the software first, and then merged in to the future version. 
 
 <figure>
-<img src="{{ BASE_PATH }}img/release-cycles.png" alt="Release cycle branch management diagram." />
+<img src="/img/release-cycles.png" alt="Release cycle branch management diagram." />
 <figcaption>"Current version first" branch management, where features and bug fixes are added to the current ("Primary") version while continuously being merged into the future version. Note that to save space, the "patch" versions for the 2.x branch are not shown.</figcaption>
 </figure>
 

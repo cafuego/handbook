@@ -4,7 +4,6 @@ layout: bootstrap-post
 title: "Project Organization"
 section: about
 ---
-{% include setup.liquid %}
 
 # Project Organization
 
@@ -33,7 +32,7 @@ The current core committer is **Nate Haug**. (Although we only have a single cor
 In the event of a question or dispute between core committers, a member of the PMC, or the wider community, an issue may be escalated to the PMC for a vote. The vote may be taken via e-mail, phone call, or other means, as long as all members of the PMC are notified of the arranged time and means of the vote. Any PMC member may report the outcome of the vote, but it is required that at least one member of the PMC post notification to the escalated issue in the public issue tracker.
 
 <figure>
-<img src="{{ BASE_PATH }}img/pmc-structure.png" alt="Diagram of the PMC Structure." />
+<img src="/img/pmc-structure.png" alt="Diagram of the PMC Structure." />
 <figcaption>Diagram showing structure for decision making on issues related to code. Note that the number of members in the PMC and number of committers is for illustrative purposes only.</figcaption>
 </figure>
 

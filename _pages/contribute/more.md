@@ -1,7 +1,19 @@
 ---
 permalink: contribute/more/
 layout: bootstrap-post
-title:  "Other Ways to Contribute"
+title:  "More Ways to Contribute to Backdrop CMS"
 section: about
 ---
-about backdrop
+
+#More Ways to Contribute
+
+**Donate**
+
+**Design**
+
+**Review**
+
+**Web Management Team**
+
+**Security Team**
+
