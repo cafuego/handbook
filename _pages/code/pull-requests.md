@@ -53,5 +53,69 @@ If you're encountering regular failures when submitting pull requests, you can u
 
 If you make a lot of commits to your repository branch while trying to fix tests or solve other problems, it's a good idea to clean up your commits before filing a pull request. Because your commit history will be merged directly into the parent project, each commit message should be clear about its purpose. Having complete commit messages makes examining the history with the `git log` or `git blame` commands easier.
 
+**Things to avoid in pull requests:**
 
+- An excessive number of commits.
+- Debugging or test commits.
+- Poorly formatted commit messages, missing "Issue #xx: " prefix.
 
+<figure>
+<img src="/img/sad-pull-request.png" width="810" height="635" />
+<figcaption>A pull request that has multiple poorly formatted commits. This pull request would not be suitable for merging into the project.</figcaption>
+</figure>
+
+If you've made a pull request that needs cleaning up, it's easy to solve this problem by deleting the pull request, fixing the commits locally, and then making a new pull request. Let's assume you had filed a pull request on the branch with the name `my_branch`, you could clean up it's commits with the following commands:
+
+```
+# Delete the remote branch (this will automatically close related pull requests).
+git push origin :my_pull_request_branch
+
+# Edit the last 4 commits together with an interactive rebase.
+git rebase -i Head~5
+```
+
+This will open your default text editor with an interface like this:
+
+```text
+pick f6dcf28 blah
+pick 0ee28af Issue #77: Removing further files[] instances from .info files.
+pick 22ade13 issue 77: Removing registry building from SimpleTest.
+pick 9e33534 debugging
+pick c5f376b 77 Fixing incorrect path to filetransfer classes
+
+# Rebase 1e5974e..c5f376b onto 1e5974e
+#
+# Commands:
+#  p, pick = use commit
+#  r, reword = use commit, but edit the commit message
+#  e, edit = use commit, but stop for amending
+#  s, squash = use commit, but meld into previous commit
+#  f, fixup = like "squash", but discard this commit's log message
+#  x, exec = run command (the rest of the line) using shell
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+# However, if you remove everything, the rebase will be aborted
+```
+
+To combine these commits into a single commit, change the word "pick" to "fixup" (or just "f" for short). At the same time, you may change the overall commit message by modifying the first commit and changing it to "reword" (or "r" for short). You may leave all the lines that start with a hash sign, they won't affect your rebase.
+
+```
+reword f6dcf28 Issue #77: Replacing the registry with a more reliable alternative.
+f 0ee28af Issue #77: Removing further files[] instances from .info files.
+f 22ade13 issue 77: Removing registry building from SimpleTest.
+f 9e33534 debugging
+f c5f376b 77 Fixing incorrect path to filetransfer classes
+```
+
+This will take all 5 commits and combine them into a single commit with a clean message. If you make any mistakes, just close your editor and use `git rebase --abort`` to cancel the rebasing.
+
+Now with all the commits nicely merged together, you can push up your branch to Github a second time, and file the pull request again with the new, cleaner commit messages.
+
+```
+git push origin my_branch
+```
+
+<figure>
+<img src="/img/happy-pull-request.png" width="814" height="524" />
+<figcaption>A cleaned-up pull request after merging the commits together.</figcaption>
+</figure>
