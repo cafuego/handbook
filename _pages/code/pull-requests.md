@@ -20,7 +20,7 @@ A maintainer or fellow contributor should then review the changes and ensure tes
 This video covers all of these above concepts in a step-by-step walkthrough.
 
 <div class="video-container">
-<iframe width="640" height="480" src="//www.youtube.com/embed/HcD9f7o34Gw?rel=0&amp;vq=hd1080" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="480" src="//www.youtube.com/embed/-zeeChPRAms?rel=0&amp;vq=hd1080" frameborder="0" allowfullscreen></iframe>
 </div>
 
 A summary of things to keep in mind:
