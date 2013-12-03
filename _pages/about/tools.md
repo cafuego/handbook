@@ -9,6 +9,10 @@ section: about
 
 We use a series of tools for communicating within the Backdrop CMS community. The primary means of communication is the [Backdrop Issue Queue](http://github.com/backdrop/backdrop-issues/issues), which is where all discussion happens when adding new features or fixing bugs.
 
+## Weekly Meetings
+
+Backdrop holds weekly meetings on **Thursdays at 1pm Pacific Time**. These open meetings anyone can join. All meetings are recorded and published to our [YouTube channel](https://www.youtube.com/user/backdropcms).
+
 ## Support
 
 Backdrop uses [StackOverflow](http://stackoverflow.com/questions/tagged/backdrop) for handling support requests. When asking a new question, tag the question with "[backdrop](http://stackoverflow.com/questions/tagged/backdrop)".
