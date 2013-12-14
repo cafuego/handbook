@@ -68,7 +68,10 @@ If you've made a pull request that needs cleaning up, it's easy to solve this pr
 
 ```
 # Delete the remote branch (this will automatically close related pull requests).
-git push origin :my_pull_request_branch
+git push origin :my_branch
+
+# Rebase all your changes to move them to the top of the commit log.
+git rebase 1.x
 
 # Edit the last 4 commits together with an interactive rebase.
 git rebase -i Head~5
