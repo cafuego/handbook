@@ -1,0 +1,57 @@
+#!/usr/bin/php
+<?php
+/**
+ * Reformat HTML source generated via GitHub markup for use with the
+ * Backdrop Filtered HTML input format.
+ *
+ * Usage: github2filtered input.html > output.html
+ *        github2filtered http://handbook.backdropcms.org/coding-standards/php > output.html
+ *        github2filtered < input.html > output.html
+ */
+
+// Check if an input filename is specified in the commandline. If not,
+// read from stdin.
+if ($_SERVER['argc'] == 2) {
+  $file = $_SERVER['argv'][1];
+}
+else {
+  $file = 'php://stdin';
+}
+
+// Open input, die on failure.
+$fp = fopen($file, 'r');
+if (!$fp) {
+  die("Cannot read from ${file}.");
+}
+
+// Read input line by line and sanitise it for Backdrops Filtered HTML
+// input format.
+while (!feof($fp)) {
+  $line = fgets($fp, 4096);
+
+  // Remove trailing whitespace.
+  $sane = rtrim($line);
+
+  // Remove unsupported HTML tags.
+  $sane = strip_tags($sane, '<a><em><strong><cite><blockquote><code><ul><ol><li><h2><h3><h4>');
+
+  // Remove ID attributes, except from links, to preserve anchors.
+  $sane = preg_replace('/([^<a]) id="([^"])+"/', '\\1', $sane);
+
+  // Remove class attributes from all tags.
+  $sane = preg_replace('/ class="([^"])+"/', '', $sane);
+
+  // Remove data-lang attributes from all tags (inline code).
+  $sane = preg_replace('/ data-lang="([^"])+"/', '', $sane);
+
+  // Decode a few HTML entities that html_entity_decode() skips.
+  $sane = strtr($sane, array('&#39;' => "'", '&quot;' => '"', '&gt;' => '>', '&lt;' => '<'));
+
+  // Decode the remaining HTML entities.
+  $sane = html_entity_decode($sane);
+
+  // Output the santitised string.
+  printf("%s\n", $sane);
+}
+
+fclose($fp);
